@@ -182,32 +182,32 @@ GO
 CREATE VIEW vCategories
 WITH SCHEMABINDING
 AS
-SELECT CategoryID, CategoryName
-FROM dbo.Categories; -- Need dbo. here
+	SELECT CategoryID, CategoryName
+	FROM dbo.Categories; -- Need dbo. here
 GO
 
 GO
 CREATE VIEW vProducts
 WITH SCHEMABINDING
 AS
-SELECT ProductID, ProductName, CategoryID, UnitPrice
-FROM dbo.Products;
+	SELECT ProductID, ProductName, CategoryID, UnitPrice
+	FROM dbo.Products;
 GO
 
 GO
 CREATE VIEW vInventories
 WITH SCHEMABINDING
 AS
-SELECT InventoryID, InventoryDate, EmployeeID, ProductID, Count
-FROM dbo.Inventories;
+	SELECT InventoryID, InventoryDate, EmployeeID, ProductID, Count
+	FROM dbo.Inventories;
 GO
 
 GO
 CREATE VIEW vEmployees
 WITH SCHEMABINDING
 AS
-SELECT EmployeeID, EmployeeFirstName, EmployeeLastName, ManagerID
-FROM dbo.Employees;
+	SELECT EmployeeID, EmployeeFirstName, EmployeeLastName, ManagerID
+	FROM dbo.Employees;
 GO
 
 -- Question 2 (5% pts): How can you set permissions, so that the public group CANNOT select data 
